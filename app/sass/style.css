@@ -1,0 +1,147 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+}
+
+.mb-mg {
+  margin: 0 1.5rem;
+}
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.header__logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  min-width: 26rem;
+}
+
+@media (max-width: 39.9375em) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.header__nav > a {
+  text-transform: uppercase;
+  color: #837d87;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.header__nav > a:not(:last-child) {
+  margin: 0 1.25rem;
+}
+
+.header__nav > a:last-child {
+  border: solid 0.125rem #2b272f;
+  color: #2b272f;
+  padding: 0.75rem 1.5rem;
+}
+
+.header__nav > a:hover {
+  color: #2b272f;
+}
+
+.header__nav > a:last-child:hover {
+  background-color: #2d2640;
+  color: #fafafa;
+}
+
+.header__hamburger {
+  cursor: pointer;
+}
+
+@media (min-width: 40em) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
+.header__hamburgerSpan {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border: solid 0.125rem #2b272f;
+}
+
+@media (min-width: 40em) {
+  .header__hamburgerSpan {
+    display: none;
+  }
+}
+
+.header__hamburgerSpan > span {
+  height: 0.125rem;
+  width: 1rem;
+  background-color: #2b272f;
+  margin: 0.09375rem;
+}
+/*# sourceMappingURL=style.css.map */
